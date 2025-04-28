@@ -142,12 +142,20 @@
 .elm-compare-photos {
 	display: flex;
 	gap: 10px;
+	min-height: 0;
 	justify-content: space-between;
 	.elm-photo {
-		aspect-ratio: 306/440;
+		aspect-ratio: inherit;
 		border-radius: 2.4rem 0 0 2.4rem;
 		flex-shrink: 0;
 		width: calc(50% - 5px);
+		height: auto;
+		&:before {
+			content: "";
+			display: block !important;;
+			position: relative;
+			padding-top: 143.7%;
+		}
 		&:last-child {
 			border-radius: 0 2.4rem 2.4rem 0;
 		}

@@ -174,7 +174,7 @@ document.addEventListener("DOMContentLoaded", function() {
 			prevEl: '.btn-action-ico.ico-arrow.ico-arrow-prev.button-slider-gallery-prev',
 		},
 		breakpoints: {
-			768: {
+			640: {
 				slidesPerView: 2,
 			},
 		},

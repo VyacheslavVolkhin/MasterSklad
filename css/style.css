@@ -815,15 +815,23 @@ html.with-fancybox body.hide-scrollbar {
   display: -ms-flexbox;
   display: flex;
   gap: 10px;
+  min-height: 0;
   -ms-flex-pack: justify;
       justify-content: space-between;
 }
 .elm-compare-photos .elm-photo {
-  aspect-ratio: 306/440;
+  aspect-ratio: inherit;
   border-radius: 2.4rem 0 0 2.4rem;
   -ms-flex-negative: 0;
       flex-shrink: 0;
   width: calc(50% - 5px);
+  height: auto;
+}
+.elm-compare-photos .elm-photo:before {
+  content: "";
+  display: block !important;
+  position: relative;
+  padding-top: 143.7%;
 }
 .elm-compare-photos .elm-photo:last-child {
   border-radius: 0 2.4rem 2.4rem 0;
@@ -1173,7 +1181,7 @@ html.with-fancybox body.hide-scrollbar {
 }
 .message-box {
   margin-bottom: var(--mbMain);
-  font-weight: bold;
+  font-weight: 500;
 }
 .message-box .box-inner-wrap {
   display: -ms-flexbox;
@@ -1338,6 +1346,14 @@ html.with-fancybox body.hide-scrollbar {
   text-align: center;
   margin-top: 60px;
   margin-top: 6rem;
+}
+@media (max-width: 1399px) {
+  .tiles-slider-box .ico-arrow-prev {
+    margin-left: 1rem;
+  }
+  .tiles-slider-box .ico-arrow-next {
+    margin-right: 1rem;
+  }
 }
 @media (max-width: 1299px) {
   .lead-box .elm-photo {
