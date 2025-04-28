@@ -4,33 +4,472 @@
 <head>
     <title>Главная</title>
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta charset="utf-8" />
+    <meta charset="utf-8">
     <meta name="keywords" content="">
     <meta name="description" content="">
     <meta name="author" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./css/reset.css" />
-    <link rel="stylesheet" href="./css/jquery.fancybox.min.css" />
-    <link rel="stylesheet" href="./css/slick.css" />
-    <link rel="stylesheet" href="./css/style.min.css" />
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/fancybox.css">
+    <link rel="stylesheet" href="./css/swiper-bundle.min.css">
+    <link rel="stylesheet" href="./css/style.min.css">
+    <script src="./js/swiper-bundle.min.js" defer></script>
+    <script src="./js/fancybox.umd.js" defer></script>
+    <script src="./js/scripts.js" defer></script>
 </head>
 
 <body>
     <!-- wrap -->
-    <div class="wrap">
-
+    <div class="wrap wrap-main header-light">
 
         <!-- header -->
         <header class="header">
             <div class="inner-wrap">
-                44444
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo.svg" alt="">
+                    </a>
+                </div>
+                <div class="actions-inner-wrap">
+                    <div class="soc-wrap">
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc-tg.svg" alt="">
+                        </a>
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc-wa.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="phone-wrap">
+                        <a href="tel:89214140777" class="link-phone h3-title">
+                            <div class="button-title">+7 (921) 414-0-777</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </header>
         <!-- /header -->
 
         <!-- page -->
-        <div class="page">
-            2222
+        <div class="page-full">
+
+            <!--lead-box-->
+            <div class="lead-box">
+                <div class="bg-full-wrap"></div>
+                <div class="box-inner-wrap">
+                    <div class="info-inner-wrap">
+                        <h1 class="page-title text-upper">Ремонт сколов и&nbsp;трещин лобовых стекол</h1>
+                        <p>в Санкт-Петербурге и ЛО</p>
+                        <a href="" class="btn">
+                            <div class="button-title">записаться на ремонт стекла</div>
+                            <div class="button-ico">
+                                <img src="./img/icons/arrow.svg" alt="">
+                            </div>
+                        </a>
+                    </div>
+                    <div class="photo-inner-wrap">
+                        <div class="elm-photo">
+                            <img src="./img/top.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/lead-box-->
+
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="items-wrap">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-main text-large">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/01.jpg" alt="">
+                                </div>
+                                <div class="tile-title-wrap">
+                                    <div class="tile-title h1-title">Ремонт сколов</div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <ul class="list-marker">
+                                    <li>Подготовка места удара</li>
+                                    <li>Заливка полимера инжектором под давлением</li>
+                                    <li>Сушка ультрафиолетом</li>
+                                    <li>Удаление излишков полимера</li>
+                                </ul>
+                            </div>
+                            <div class="tile-action-wrap">
+                                <a href="" class="btn button-border button-medium">
+                                    <div class="button-title">записаться</div>
+                                    <div class="button-ico">
+                                        <img src="./img/icons/arrow.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-main text-large">
+                            <div class="tile-photo-wrap">
+                                <div class="tile-photo photo-cover">
+                                    <img src="./img/02.jpg" alt="">
+                                </div>
+                                <div class="tile-title-wrap">
+                                    <div class="tile-title h1-title">Ремонт трещин</div>
+                                </div>
+                            </div>
+                            <div class="tile-info-wrap">
+                                <ul class="list-marker">
+                                    <li>Остановка трещины засверливанием/создание искусственного скола</li>
+                                    <li>Заливка инжектором полимера под давлением всей длинны трещины</li>
+                                    <li>Сушка ультрафиолетовой лампой</li>
+                                    <li>Удаление излишков полимера</li>
+                                </ul>
+                            </div>
+                            <div class="tile-action-wrap">
+                                <a href="" class="btn button-border button-medium">
+                                    <div class="button-title">записаться</div>
+                                    <div class="button-ico">
+                                        <img src="./img/icons/arrow.svg" alt="">
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+            <!--message-box-->
+            <div class="message-box">
+                <div class="box-inner-wrap type-alert text-large">
+                    <div class="info-inner-wrap">
+                        <h2 class="h2-title"><span class="text-alert">ВАЖНАЯ</span> Информация!</h2>
+                        <p>Для того, чтобы ремонт стекла был выполнен качественно, следует не допускать попадания пыли, грязи и воды в место повреждения! Поэтому, при появлении трещины или скола в стекле мы рекомендуем заклеить повреждение скотчем, подложив под него кусочек бумаги. После этого необходимо как можно скорее приехать к нам на ремонт</p>
+                    </div>
+                    <div class="ico-inner-wrap">
+                        <div class="elm-ico">
+                            <img src="./img/icons/alert.svg" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/message-box-->
+
+            <!--bg-box-->
+            <div class="bg-box">
+                <div class="bg-full-wrap"></div>
+                <!--title-box-->
+                <div class="title-box">
+                    <h2 class="h1-title">галерея работ по ремонту сколов и трещин</h2>
+                </div>
+                <!--/title-box-->
+                <!--tiles-slider-box-->
+                <div class="tiles-slider-box">
+                    <div class="slider-inner-wrap slider-gallery">
+                        <div class="slider-wrap swiper">
+                            <div class="slider swiper-wrapper">
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal01.jpg" class="elm-photo photo-cover" data-fancybox="gal01">
+                                            <img src="./img/gal01.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal02.jpg" class="elm-photo photo-cover" data-fancybox="gal01">
+                                            <img src="./img/gal02.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal03.jpg" class="elm-photo photo-cover" data-fancybox="gal02">
+                                            <img src="./img/gal03.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal04.jpg" class="elm-photo photo-cover" data-fancybox="gal02">
+                                            <img src="./img/gal04.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal01.jpg" class="elm-photo photo-cover" data-fancybox="gal03">
+                                            <img src="./img/gal01.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal02.jpg" class="elm-photo photo-cover" data-fancybox="gal03">
+                                            <img src="./img/gal02.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal03.jpg" class="elm-photo photo-cover" data-fancybox="gal04">
+                                            <img src="./img/gal03.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal04.jpg" class="elm-photo photo-cover" data-fancybox="gal04">
+                                            <img src="./img/gal04.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal01.jpg" class="elm-photo photo-cover" data-fancybox="gal05">
+                                            <img src="./img/gal01.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal02.jpg" class="elm-photo photo-cover" data-fancybox="gal05">
+                                            <img src="./img/gal02.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal03.jpg" class="elm-photo photo-cover" data-fancybox="gal06">
+                                            <img src="./img/gal03.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal04.jpg" class="elm-photo photo-cover" data-fancybox="gal06">
+                                            <img src="./img/gal04.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal01.jpg" class="elm-photo photo-cover" data-fancybox="gal07">
+                                            <img src="./img/gal01.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal02.jpg" class="elm-photo photo-cover" data-fancybox="gal07">
+                                            <img src="./img/gal02.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                                <!--sl-wrap-->
+                                <div class="sl-wrap swiper-slide">
+                                    <div class="elm-compare-photos">
+                                        <a href="./img/gal03.jpg" class="elm-photo photo-cover" data-fancybox="gal08">
+                                            <img src="./img/gal03.jpg" alt="">
+                                            <div class="photo-title h2-title">Было</div>
+                                        </a>
+                                        <a href="./img/gal04.jpg" class="elm-photo photo-cover" data-fancybox="gal08">
+                                            <img src="./img/gal04.jpg" alt="">
+                                            <div class="photo-title h2-title">Стало</div>
+                                        </a>
+                                    </div>
+                                </div>
+                                <!--/sl-wrap-->
+                            </div>
+                        </div>
+                        <div class="btn-action-ico ico-arrow ico-arrow-prev button-slider-gallery-prev"></div>
+                        <div class="btn-action-ico ico-arrow ico-arrow-next button-slider-gallery-next"></div>
+                    </div>
+                </div>
+                <!--/tiles-slider-box-->
+            </div>
+            <!--/bg-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <h2 class="h1-title">Наши преимущества</h2>
+            </div>
+            <!--/title-box-->
+
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="items-wrap col-4 space-small">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/01.svg" alt="">
+                            </div>
+                            <div class="tile-title h2-title">Технологии</div>
+                            <p>Мы производим ремонт автостекол на любых марках автомобилей</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/02.svg" alt="">
+                            </div>
+                            <div class="tile-title h2-title">Время</div>
+                            <p>Ремонт автомобильных стекол занимает всего 30 минут, а замена лобового стекла -60 минут</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/03.svg" alt="">
+                            </div>
+                            <div class="tile-title h2-title">Стоимость</div>
+                            <p>Цена на услугу по ремонту стекла на автомобиле зависит от степени/типа повреждений</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-plus">
+                            <div class="tile-ico">
+                                <img src="./img/icons/04.svg" alt="">
+                            </div>
+                            <div class="tile-title h2-title">Безопасность</div>
+                            <p>Мы сотрудничаем со всеми крупными страховыми компаниями</p>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+                <div class="more-box">
+                    <a href="" class="btn">
+                        <div class="button-title">записаться на ремонт стекла</div>
+                        <div class="button-ico">
+                            <img src="./img/icons/arrow.svg" alt="">
+                        </div>
+                    </a>
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+            <!--action-box-->
+            <div class="action-box">
+                <div class="box-inner-wrap">
+                    <div class="title-inner-wrap">
+                        <h2 class="page-title">Оценка по фото</h2>
+                        <p>Напишите нам в мессенджеры и мы&nbsp;дадим оценку по ремонту стекла</p>
+                    </div>
+                    <div class="photo-inner-wrap">
+                        <div class="elm-photo">
+                            <img src="./img/middle.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/action-box-->
+
+            <!--title-box-->
+            <div class="title-box">
+                <h2 class="h1-title">Вопрос-Ответ</h2>
+            </div>
+            <!--/title-box-->
+
+            <!--tiles-box-->
+            <div class="tiles-box">
+                <div class="items-wrap col-1 space-small">
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-button js-btn-popup-toggle">Какие вмятины можно удалить с помощью технологии Paintless Dent Repair (PDR)?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В первую очередь – значительная экономия времени, денежных средств. Немаловажным фактором остоется то что ваш автомобиль не попадает в разряд перекрашенных. И в заключение, большое преимущество – это стоимость ремонта, которая значительно ниже, чем при применении традиционных методов ремонта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-button js-btn-popup-toggle active">Какие преимущества технологии PDR?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В первую очередь – значительная экономия времени, денежных средств. Немаловажным фактором остоется то что ваш автомобиль не попадает в разряд перекрашенных. И в заключение, большое преимущество – это стоимость ремонта, которая значительно ниже, чем при применении традиционных методов ремонта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-button js-btn-popup-toggle">Будет ли повреждена краска при удалении вмятины?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В первую очередь – значительная экономия времени, денежных средств. Немаловажным фактором остоется то что ваш автомобиль не попадает в разряд перекрашенных. И в заключение, большое преимущество – это стоимость ремонта, которая значительно ниже, чем при применении традиционных методов ремонта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-button js-btn-popup-toggle">Сколько времени занимает процесс удаления вмятины?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В первую очередь – значительная экономия времени, денежных средств. Немаловажным фактором остоется то что ваш автомобиль не попадает в разряд перекрашенных. И в заключение, большое преимущество – это стоимость ремонта, которая значительно ниже, чем при применении традиционных методов ремонта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-button js-btn-popup-toggle">Имеет ли значение марка и возраст автомобиля?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В первую очередь – значительная экономия времени, денежных средств. Немаловажным фактором остоется то что ваш автомобиль не попадает в разряд перекрашенных. И в заключение, большое преимущество – это стоимость ремонта, которая значительно ниже, чем при применении традиционных методов ремонта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                    <!--item wrap-->
+                    <div class="item-wrap">
+                        <div class="item-tile-question js-popup-wrap no-close">
+                            <a href="" class="tile-button js-btn-popup-toggle">Можно ли покупать и устанавливать б/у лобовые стекла с целью экономии средств?</a>
+                            <div class="tile-content-block js-popup-block">
+                                <p>В первую очередь – значительная экономия времени, денежных средств. Немаловажным фактором остоется то что ваш автомобиль не попадает в разряд перекрашенных. И в заключение, большое преимущество – это стоимость ремонта, которая значительно ниже, чем при применении традиционных методов ремонта</p>
+                            </div>
+                        </div>
+                    </div>
+                    <!--/item wrap-->
+                </div>
+            </div>
+            <!--/tiles-box-->
+
+            <!--action-box-->
+            <div class="action-box type-second">
+                <div class="box-inner-wrap">
+                    <div class="title-inner-wrap">
+                        <h2 class="page-title">Остались вопросы?</h2>
+                        <div class="action-wrap">
+                            <div class="action-title">Оставьте заявку и мы ответим вам в&nbsp;кратчайшие сроки!</div>
+                            <a href="" class="btn button-medium button-att">
+                                <div class="button-ico">
+                                    <img src="./img/icons/arrow.svg" alt="">
+                                </div>
+                            </a>
+                        </div>
+                    </div>
+                    <div class="photo-inner-wrap">
+                        <div class="elm-photo">
+                            <img src="./img/bottom.png" alt="">
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!--/action-box-->
+
         </div>
         <!-- /page -->
 
@@ -38,7 +477,35 @@
         <!-- footer -->
         <footer class="footer">
             <div class="inner-wrap">
-                333333
+                <div class="logo-inner-wrap">
+                    <a href="" class="logo">
+                        <img src="./img/main/logo-footer.svg" alt="">
+                    </a>
+                    <div class="logo-title">Ремонт сколов и трещин лобовых <br> стекол в Санкт-Петербурге</div>
+                </div>
+                <div class="rates-inner-wrap">
+                    <div class="elm-photo photo-contain">
+                        <img src="./img/icons/avito.svg" alt="">
+                    </div>
+                    <div class="elm-photo photo-contain">
+                        <img src="./img/icons/yandex.svg" alt="">
+                    </div>
+                </div>
+                <div class="actions-inner-wrap">
+                    <div class="soc-wrap">
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc-tg.svg" alt="">
+                        </a>
+                        <a href="" class="btn-action-ico button-soc">
+                            <img src="./img/icons/soc-wa.svg" alt="">
+                        </a>
+                    </div>
+                    <div class="phone-wrap">
+                        <a href="tel:89214140777" class="link-phone h3-title">
+                            <div class="button-title">+7 (921) 414-0-777</div>
+                        </a>
+                    </div>
+                </div>
             </div>
         </footer>
         <!-- /footer -->
@@ -46,11 +513,7 @@
     </div>
     <!-- /wrap -->
 
-    <script src="./js/jquery.min.js"></script>
-    <script src="./js/jquery.fancybox.min.js"></script>
-    <script src="./js/slick.min.js"></script>
-    <script src="./js/jquery.maskedinput.min.js"></script>
-    <script src="./js/scripts.js"></script>
+
 
 </body>
 
